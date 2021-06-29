@@ -1,6 +1,43 @@
 print("Welcome to the quiz. Please hit ENTER to begin.")
 input()
 
+# DON'T LOOK AT THE ANSWERS!!! JUST RUN THE PROGRAM!!!
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+
 print("Beijing")
 while input().lower() != "china":
     print("Wrong. Try again.")
