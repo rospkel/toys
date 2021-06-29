@@ -53,3 +53,5 @@ while input().lower() != "russia":
 print("Joe")
 while input().lower() != "mama":
     print("Wrong. Try again.")
+
+print("Congratulations. You have completed \"the quiz.\"")
