@@ -16,3 +16,5 @@ if name.lower() in approved_players.lower():
 #lose game
 else:
     print("You lose.")
+
+#I know I commit way too often.
