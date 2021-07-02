@@ -1,4 +1,4 @@
-approved_players = "Elizabeth Jeffrey Henning Thomas Tommy Jacob"
+approved_players = "Ren Stimpy"
 play = "y"
 
 print("Welcome to the cup game. Please enter your name.")
