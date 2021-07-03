@@ -5,7 +5,7 @@ print("Welcome to the cup game. Please enter your name.")
 name = input()
 if name.lower() in approved_players.lower():
 #win game
-    print("Glad to see you, " + name + ".")
+    print(f'Glad to see you, {name}.')
     while play == "y":
         print("Please choose a cup from 1-3. Under one of these cups is the winning ball.")
         while input().lower() not in "123cup 1cup 2cup 3":

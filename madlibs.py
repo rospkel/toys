@@ -5,4 +5,4 @@ noun2 = input()
 print('Choose another adjective.')
 adj2 = input()
 
-print("Your mother was a " + adj1 + " " + noun2 + ". That's why she's so " + adj2 + ".")
+print(f"Your mother was a {adj1} {noun2}. That's why she's so {adj2}.")
