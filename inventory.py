@@ -4,11 +4,12 @@ import time
 # This is a game loop for an arbitrary inventory.
 # This interface is highly adaptable to a variety of narrative devices.
 # More commands and higher levels of interactivity may come in a later version.
-
+# It is possible to use the word "everything"
+# to do something to all items at once.
 
 inventory = []
 ground = []
-command_list = ("CHECK INVENTORY", "CHECK GROUND", "SORT INVENTORY", "STOP", "PICK UP (X)", "DROP (X)", "SPAWN (X)", "DESTROY (X)", "EAT (X)")
+command_list = ("CHECK INVENTORY", "CHECK GROUND", "SORT INVENTORY", "STOP", "PICK UP (X)", "DROP (X)", "SPAWN (X)", "DESTROY (X)", "EAT (X)", "BUILD POOP FORT", "ENTER POOP FORT")
 while True:
     s = input().lower()
     if s == "check inventory":
@@ -108,5 +109,17 @@ while True:
             print("POOPED")
         else:
             print(s[4:].upper()+" NOT IN INVENTORY")
+    elif s == "build poop fort":
+        if ground.count('poop') > 4:
+            ground.append('poop fort')
+            for i in range(5):
+                ground.remove('poop')
+            print("POOP FORT HAS BEEN BUILT")
+        else: print("NOT ENOUGH POOP FOR A FORT")
+    elif s == "enter poop fort":
+        if "poop fort" in ground:
+            print("YOU ARE NOW IN THE POOP FORT. CONGRATULATIONS. YOU WIN!")
+            break
+        else: print("WHAT POOP FORT?")
     else:
         print(f"COMMAND NOT UNDERSTOOD. YOU CAN: {command_list}")
